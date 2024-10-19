@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню ресторана</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ресторан</h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Меню</h2>
+        <div class="menu-section">
+            <h3>Закуски</h3>
+            <ul>
+                <li>Карпаччо из говядины - 600₽</li>
+                <li>Брускетта с лососем - 450₽</li>
+                <li>Салат "Цезарь" - 500₽</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h3>Основные блюда</h3>
+            <ul>
+                <li>Стейк рибай - 1500₽</li>
+                <li>Паста карбонара - 700₽</li>
+                <li>Филе судака - 950₽</li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h3>Напитки</h3>
+            <ul>
+                <li>Кофе американо - 150₽</li>
+                <li>Чай зелёный - 100₽</li>
+                <li>Коктейль "Мохито" - 300₽</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <p>Адрес: ул. Ночная, д. 12</p>
+        <p>Телефон: +7 (999) 123-45-67</p>
+        <p>© 2024 Ресторан. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.style.display === "block") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

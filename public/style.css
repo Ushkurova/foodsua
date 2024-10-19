@@ -1,0 +1,111 @@
+/* Общие стили */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+header {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #f0a500;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  color: #f0a500;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none; /* По умолчанию скрыто для мобильного */
+}
+
+nav ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #f0a500;
+}
+
+/* Меню */
+#menu {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #f0a500;
+}
+
+.menu-section {
+  margin-bottom: 30px;
+}
+
+.menu-section h3 {
+  font-size: 1.4rem;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 10px;
+}
+
+/* Подвал */
+footer {
+  background-color: #333333;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  header {
+      flex-direction: row;
+  }
+
+  nav ul {
+      display: block;
+      background-color: #333333;
+  }
+
+  nav ul li {
+      margin: 0;
+      padding: 10px;
+  }
+}
