@@ -64,6 +64,8 @@ function loadInfoOfCategoryAdmin(){
 }
 
 function loadInfoOfCategory(user){
+    if (numberOfCategory > 16)
+        return;
     var category = categories[numberOfCategory];
     fetch(`${category}.txt`).then(r => r.text()).then(d => {
     const menu = d.split('\n');
