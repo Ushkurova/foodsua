@@ -3,12 +3,12 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #1a1a1a;
+  background-color: #131313;
   color: #ffffff;
 }
 
 header {
-  background-color: #333333;
+  background-color: #141414;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,12 +17,13 @@ header {
 
 header h1 {
   font-size: 1.5rem;
-  color: #f0a500;
+  color: #ffffff;
+  text-shadow: 0 0 15px #ffffff;
 }
 
 .menu-icon {
   font-size: 1.8rem;
-  color: #f0a500;
+  color: #ff8000;
   cursor: pointer;
 }
 
@@ -55,7 +56,7 @@ nav ul li a:hover {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 3.8vw;
   color: #f0a500;
 }
 
@@ -64,8 +65,8 @@ h2 {
 }
 
 .menu-section h3 {
-  font-size: 1.4rem;
-  color: #f0a500;
+  font-size: 3.4vw;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -75,15 +76,18 @@ h2 {
 }
 
 .menu-section ul li {
-  font-size: 1.2rem;
+  font-size: 4vw;
   margin: 10px 0;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #bcb1b1;
   padding-bottom: 10px;
 }
 
 /* Подвал */
 footer {
-  background-color: #333333;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #141414;
   padding: 20px;
   text-align: center;
 }
@@ -101,11 +105,83 @@ footer p {
 
   nav ul {
       display: block;
-      background-color: #333333;
+      background-color: #141414;
   }
 
   nav ul li {
       margin: 0;
       padding: 10px;
   }
+}
+
+
+.arrow {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  font-size: 4vw;
+  height: 100vh;
+  padding: 2vw;
+  padding-bottom: 50vh;
+  text-align: center;
+  align-content: center;
+
+}
+
+.arrow:active{
+  opacity: 0.5;
+  background-color: #eeefbc;
+}
+
+.next{
+  right: 2vw;
+}
+
+.prev{
+  left: 2vw;
+}
+
+.sostav {
+
+  margin-top: 3vh;
+  color: gray;
+  font-size: 3vw;
+}
+.price{
+  margin-top: 3vh;
+  color: white;
+  font-size: 3vw;
+}
+
+.cancel{
+ position: relative;
+ left: 35vw;
+ bottom: 3vh;
+}
+
+.cancelItem{
+  color: rgb(245, 108, 108);
+}
+
+.imageMenu{
+  position: fixed;
+  width: 30vw;
+  top: 0;
+  left: 70vw;
+}
+
+.imageMenu img{
+  width: 30vw;
+
+}
+
+.imgFood{
+  position: fixed;
+  width: 30vw;
+  top: 75vh;
+  left: 70vw;
+}
+
+.imgFood img{
+  width: 30vw;
+
 }
