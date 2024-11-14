@@ -178,12 +178,19 @@ footer p {
 
 .imgFood{
   position: fixed;
-  width: 30vw;
-  top: 75vh;
-  left: 70vw;
+  width: 40vw;
+  top: 60vh;
+  left: 55vw;
+  z-index: -1;
+  opacity: 0.7;
 }
 
 .imgFood img{
-  width: 30vw;
+  width: 40vw;
 
+}
+
+.pad{
+  width: 100wv;
+  height: 100px;
 }
