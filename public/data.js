@@ -107,7 +107,7 @@ function loadInfoOfCategory(user){
 
     });
     var img = document.getElementById('imgFood');
-    img.src = `/img/${images[numberOfCategory]}`;
+    img.src = `img/${images[numberOfCategory]}`;
     if (user == 'admin')
     {
         console.log(document.getElementsByClassName('option').length);

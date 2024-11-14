@@ -18,7 +18,7 @@ const icecream = 'МОРОЖЕНОЕ';
 const extra_to_icecream = 'ДОБАВКИ К МОРЖЕНОМУ';
 const sauce = 'СОУСЫ';
 const shisha = 'КАЛЬЯН';
-const images = ['salad.png', 'garnir.png']
+const images = ['salad.png', 'soup.png', 'pasta.png', 'garnir.png', 'meat.png', 'kebab.png', 'own.png', 'var.png', '', '', 'coffee.png', 'ice.png', '']
 
 var allOptions = {
     'С курицей и сметаной':1,
