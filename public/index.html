@@ -64,6 +64,20 @@
             }
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script>
+            
+            // Hammer.js для обработки свайпов
+            const hammer = new Hammer(document.body);
+
+            hammer.on('swipeleft', () => {
+                   nextCategory();
+            });
+
+            hammer.on('swiperight', () => {
+               prevCategory();
+            });
+    </script>
 </body>
 
 </html>
